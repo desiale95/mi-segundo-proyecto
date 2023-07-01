@@ -1,0 +1,376 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+    font-size: 20px;
+    transition: all 1.5s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img {
+    height: 70px;
+    margin: auto;
+    transition: all 0.3s;
+    
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display:inline-block;
+    padding: 0 5px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links a:hover{ 
+    background-color: rgba(214, 8, 50, 0.936);
+    color: white;
+    border-radius: 5px;
+}
+
+#toggle{
+    display: none;
+}
+
+#label_toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color:  rgba(214, 8, 50, 0.936);
+    cursor: pointer;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+    transition: all 1.5s ease;
+}
+
+.dark footer{
+    background-color: #433e3e;
+    transition: all 1.5s ease;
+}
+
+.dark .header .nav-links a{
+    background-color: #333;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.dark .header .nav-links a:hover{
+    background-color: #433e3e;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.dark .first article, .dark .second article{
+    background-color: #433e3e;
+    transition: all 0.5s ease;
+}
+
+main .first{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.first .imagen {
+    width:400px;
+    height:400px;
+    border-radius:250px;
+    margin-right: 5px;
+    padding: 20px;
+    
+}
+
+
+.first article{
+    transition: box-shadow 0.3s ease ;
+    background-color: white;
+    margin: 70px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.first article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+}
+
+.btn{
+    border-radius: 30px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.btn-1{
+    color: white;
+    background-color: rgba(214, 8, 50, 0.936);
+}
+
+.btn-1:hover{
+    background-color: rgba(191, 22, 56, 0.936);
+    transform: scale(1.2);
+}
+
+.btn-1:active{
+    background-color: rgba(141, 16, 41, 0.936);
+}
+
+
+main .second{
+    width: 400px;
+    margin: auto;
+}
+
+.second article {
+    transition: box-shadow 0.3s ease ;
+    background-color: rgba(210, 116, 135, 0.936) ;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.second article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+}
+
+div{
+    text-align: center;
+}
+
+.second a, .second img{
+    display: inline-block;
+    padding: 0 7px;
+    
+}
+
+.second div a{
+    transform: scale(1.2);
+}
+
+main .reloj{
+    font-family: 'Share Tech Mono', monospace;
+    transition: box-shadow 0.3s ease ;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #0F3854;
+    background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+    background-size: 100%;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(10,175,230,1),0 0 20px rgba(10,175,230,0);
+    border-radius: 0.5rem;
+}
+
+main .reloj:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+}
+
+main .reloj p{
+    margin: 0;
+    padding: 0;
+}
+
+main .tiempo{
+    letter-spacing: 0.05em;
+    font-size: 80px;
+    padding: 5px 0;
+}
+
+main .fecha, main .hora-arg{
+    letter-spacing: 0.2em;
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+footer{
+    background-color: rgba(214, 8, 50, 0.936);
+    padding: 1.5rem;
+    color: wheat;
+    text-align: center;
+}
+
+li.nav-item:hover,
+li.nav-item a.active,
+
+.active{
+    background: rgba(214, 8, 50, 0.936);
+    border-radius: 5px;
+}
+
+/* Destop */
+
+@media screen and (min-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    main .first{
+        display: flex;
+    }
+    
+    .first .imagen{
+        cursor: pointer;
+    }
+
+    .first article{
+        margin: 0 20px;
+        padding: 15px 15px;
+    }
+    main .second{
+        padding: 150px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        font-size: 15px;
+    }
+    main .first{
+        display: flex;
+    }
+    
+    .first .imagen{
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+
+    .first article{
+        margin: 0 20px;
+        padding: 15px 15px;
+    }
+    main .second{
+        padding: 150px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    body{
+        font-size: 12px;
+    }
+
+    .header{
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    .header .nav-links a:hover{
+        background-color: transparent;
+        color: black;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .header .logo img{
+        height: 40px;
+    }
+
+    #label_toggle{
+        font-size: 15px;
+    }
+    main .first{
+        display: block;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        
+    }
+    
+    main .second{
+        width: 300px;
+        padding: 0%;
+    
+    }
+
+    .first .imagen{
+        width:225px;
+        height:225px;
+    }
+
+    .first article{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .first article img{
+        width: 1000px;
+        height: 1000px;
+    }
+
+    
+    .second img{
+        width: 70px;
+        margin: 2px;
+    }
+
+    .second a, .second img{
+        padding: 0 5px;
+        
+    }
+
+    main .fecha{
+        font-size: 18px;
+    }
+
+    main .tiempo{
+        font-size: 40px;
+    }
+
+    .active{
+        font-size: 10px;
+    }
+}
+
+    
+
+
